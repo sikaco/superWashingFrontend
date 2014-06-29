@@ -1,0 +1,93 @@
+@import "_variables";
+
+/*---------------------------------
+ *  input
+ *---------------------------------*/
+input {
+
+}
+
+/*---------------------------------
+ *  components
+ *---------------------------------*/
+
+/*buttons*/
+.btn {
+  /*完全通用属性*/
+  text-align: center;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 0;
+  text-decoration: none;
+  /*基本通用属性*/
+  display: block;
+  border: 0;
+  color: @white;
+  background-color: @purple;
+  font-size: 1.5rem;
+}
+.btn-orderImme { //order immediately 立即下单
+  width: 70px;
+  padding: 8px;
+  display: inline-block;
+  position: relative;
+  top: -15px;
+}
+.btn-order { //下单
+  width: 82px;
+  height: 28px;
+}
+.btn-cancel {
+  width: 82px;
+  height: 28px;
+  background-color: @gray5B;
+}
+.btn-submit {
+  width: 255px;
+  height: 38px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//订单页面状态按钮
+.btn-orderState-mixin { //just a mixin, don't use it straight!
+  width: 48px;
+  height: 22px;
+}
+.btn-orderFinished {
+  &:extend(.btn-orderState-mixin);
+  color: @blue;
+}
+.btn-orderCanceled {
+  &:extend(.btn-orderState-mixin);
+  color: @gray56;
+}
+.btn-orderPaid {
+  &:extend(.btn-orderState-mixin);
+  color: @blue;
+}
+.btn-orderNotPaid {
+  &:extend(.btn-orderState-mixin);
+  color: @purple;
+}
+.btn-orderConfirmed {
+  &:extend(.btn-orderState-mixin);
+  color: @blue;
+}
+.btn-orderNotConfirmed {
+  &:extend(.btn-orderState-mixin);
+  color: @purple;
+}
+
+/*modal box*/
+.modalBox {
+
+}
+
+/*number box*/
+.numberBox {
+  .num {
+    width: 3rem;
+    text-align: center;
+  }
+}

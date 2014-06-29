@@ -1,0 +1,40 @@
+@import "deps/_variables";
+
+//reset
+ul, p {
+  margin: 0;
+  padding: 0;
+}
+
+//root font-size
+html {
+  font-size: 10px;
+}
+
+//common style
+main {
+  margin-top: 27px;
+}
+
+//telephone bar - because this bar almost in every page, and every page just have one,
+//so i classified it as common 'attribute' in this less file, not in components.less
+#telBar {
+  padding: 5px 35px;
+  width: 100%;
+  border-bottom: solid 1px @grayA7;
+  background-color: @white;
+  font-size: 1rem;
+  line-height: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  span {
+    display: inline-block;
+    vertical-align: top;
+    padding: 3px 0;
+    height: 10px;
+  }
+  img {
+    width: 25px;
+  }
+}
