@@ -1,0 +1,65 @@
+<!--constant_header-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+    maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta content=”yes” name=”apple-mobile-web-app-capable”/>
+    <title></title>
+    <!--depend css-->
+    <link rel="stylesheet" href="../stylesheet/deps/normalize.css">
+    <link rel="stylesheet" href="../stylesheet/deps/components.css">
+    <!--depend css end-->
+    <link rel="stylesheet" href="../stylesheet/common.css">
+    <!--different-->
+    <link rel="stylesheet" href="../stylesheet/bagOrderDetail.css">
+    <!--different end-->
+</head>
+<body>
+<header>
+    <div id="telBar">
+        <span>有任何问题请拨打电话 400-4000-400000</span>
+        <a href="">
+            <img src="../image/telphone.png">
+        </a>
+    </div>
+</header>
+<main>
+    <!--constant_header end-->
+    <h1>超级洗衣返洗申请表</h1>
+    <form id="rewashingForm">
+        <div class="formRow">
+            <label for="name">您的姓名：</label>
+            <input id="name">
+        </div>
+        <div class="formRow">
+            <label for="telephone">您的电话号码：</label>
+            <input id="telephone">
+        </div>
+        <div class="formRow">
+            <label for="orderId">服务订单号：</label>
+            <input id="orderId">
+        </div>
+        <div class="formRow">
+            <label for="clothing">需要返洗的衣物名称：</label>
+            <input id="clothing">
+        </div>
+        <div class="formRow">
+            <label for="reason">返洗原因：</label>
+            <textarea id="reason"></textarea>
+        </div>
+        <button class="btn btn-submit" type="submit">提交</button>
+    </form>
+    <!--constant_footer-->
+</main>
+<footer>
+
+</footer>
+<!--different-->
+<script src="../javascript/jquery.min.js"></script>
+<script src="../javascript/bagOrderDetail.js"></script>
+<!--different end-->
+</body>
+</html>
+<!--constant_footer end-->
