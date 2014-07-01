@@ -78,14 +78,40 @@ input {
 
 /*modal box*/
 .modalBox {
-
+  display: none;
 }
 
 /*number box*/
 .numberBox {
   display: inline-block;
+  vertical-align: sub;
+  color: @black;
+  button, label {
+    display: block;
+    float: left;
+  }
+  button {
+    background-color: @grayE3;
+    color: @black;
+    width: 26px;
+    height: 23px;
+    border: solid 1px @grayA9;
+  }
+  .reduce {
+    border-right: none;
+  }
+  .add {
+    border-left: none;
+  }
   .num {
-    width: 3rem;
+    width: 4rem;
     text-align: center;
   }
+}
+
+/*horizonLine*/
+hr {
+  border: none;
+  border-bottom: solid 1px @grayC1;
+  margin: 12px 0;
 }
