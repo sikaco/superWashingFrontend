@@ -4,21 +4,37 @@
   display: block;
   list-style: none;
   padding: 5px 10px 0;
+  color: @white;
+  font-size: 1.5rem;
   li {
     margin-bottom: 10px;
-    border: solid 1px @grayA0;
-    background-color: @blue;
-    height: 208px;
+    border: solid 1px @grayB5;
+    position: relative;
   }
   img {
     width: 100%;
+    display: block;
+  }
+  .brief {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1px 7px;
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin: 5px 0;
   }
   .price {
-    color: @white;
-    width: 200px;
-    display: inline-block;
-    h2, p {
-      margin: 2px;
-    }
+    margin-top: 2px;
+  }
+  em {
+    font-size: 2.5rem;
+    font-style: normal;
+  }
+  .btn-orderImme {
+    position: absolute;
+    right: 8px;
+    top: 30px;
   }
 }

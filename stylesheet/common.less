@@ -1,14 +1,24 @@
 @import "deps/_variables";
 
+//root font
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
 //reset
 ul, p {
   margin: 0;
   padding: 0;
 }
 
-//root font-size
-html {
-  font-size: 10px;
+//layout
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  // ie6-7支持border-box;
+  //*behavior: url(/ie/boxsizing.htc)
 }
 
 //common style
