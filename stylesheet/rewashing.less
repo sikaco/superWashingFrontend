@@ -1,0 +1,51 @@
+@import "deps/_variables";
+
+html {
+  background-color: @grayF0;
+}
+
+#telBar {
+  display: none;
+}
+
+main {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+  padding: 14px;
+  background-color: @blue-dark;
+  color: @white;
+  border-top: solid 5px @blue;
+  border-bottom: solid 23px @grayE3;
+}
+
+#rewashingForm {
+  border-top: solid 1px @grayC1;
+  padding: 4px 10px;
+  font-size: 1.5rem;
+  color: @gray53;
+  background-color: @grayF0;
+  .formRow {
+    padding-top: 8px;
+    width: 89%;
+    margin: 0 auto;
+  }
+  label {
+    display: block;
+  }
+  input {
+    width: 100%;
+  }
+  #reason {
+    width: 100%;
+    height: 70px;
+  }
+  .btn-submit {
+    margin-top: 30px;
+    margin-bottom: 27px;
+  }
+}
