@@ -19,7 +19,7 @@ main {
   em {
     font-size: 3rem;
     font-style: normal;
-    margin: 0 6px 0 20px;
+    margin: 0 0 0 20px;
   }
 }
 
@@ -33,8 +33,41 @@ h2 {
 }
 
 #washingNumber {
-  padding: 10px 15px;
-  color: @purple;
+  padding: 0 15px;
+  .bagNum {
+    padding: 10px 15px;
+  }
+  .formRow {
+    border-bottom: solid 1px @grayCE;
+    padding-bottom: 6px;
+    padding-top: 6px;
+  }
+  .lastRow {
+    border-bottom: none;
+  }
+  .unitPrice {
+    height: 100%;
+    width: 80px;
+    display: inline-block;
+  }
+  .borderNum {
+    width: 44px;
+    height: 36px;
+    border: solid 1px;
+    font-size: 27px;
+    padding: 0px 5px;
+    display: inline-block;
+  }
+  .yuan {
+    font-size: 2rem;
+    position: relative;
+    bottom: 1px;
+  }
+  span {
+    position: relative;
+    bottom: 2px;
+    margin-right: 10px;
+  }
 }
 
 #intro {
@@ -45,7 +78,6 @@ h2 {
     color: @gray53;
   }
   .purpleWords {
-    color: @purple;
     margin: 20px 0 5px;
     font-size: 1.2rem;
   }
@@ -60,7 +92,9 @@ h2 {
 
 #orderForm {
   background-color: @grayF0;
+  padding-top: 10px;
   padding-bottom: 25px;
+  border-top: solid 1px @white;
   .formRow {
     margin: 5px;
   }
@@ -69,13 +103,16 @@ h2 {
     width: 92px;
     display: inline-block;
   }
+  input, textarea {
+    width: 170px;
+  }
   #address {
     vertical-align: top;
   }
 }
 
 #time {
-  padding: 12px 0 54px 34px;
+  padding: 12px 0 54px 43px;
   .formRow {
     margin: 3px 0;
   }
@@ -87,7 +124,8 @@ h2 {
     background-size: 5px;
     //individuation
     position: relative;
-    top: -2px;
+    top: -3px;
+    right: 5px;
   }
   label {
     margin: 0 3px 0 -4px;

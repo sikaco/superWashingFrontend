@@ -1,21 +1,44 @@
-var modalBox = {
-  /*obj为触发模态框弹出按钮*/
-  exec: function(obj) {
-    var form = document.getElementById(obj.dataset.formid);
-    this.contentFill(form);
-    this.popup(form);
-  },
-  contentFill: function(form) {
-
-  },
-  popup: function(form) {
-
-  }
-};
-
 $(function() {
   var submit = document.getElementById("orderSubmit");
   submit.addEventListener('click', function() {
     modalBox.exec(this);
   });
 });
+
+var modalBox = {
+  /*obj为触发模态框弹出按钮*/
+  exec: function(obj) {
+    var formJSON = $('#' + obj.dataset.formid).serializeArray();
+    var $modalBox = $('.modalBox').eq(0);
+
+    this.contentFill($modalBox, formJSON);
+    this.popup($modalBox);
+    /*给模态框的按钮加入事件处理*/
+    $modalBox.find('.btn-cancel').click(function(event) {
+      $modalBox.hide();
+    });
+    $modalBox.find('.btn-confirm').click(function(event) {
+      $.ajax({
+        url: ""
+        //TODO: 微信
+      })
+    });
+  },
+  contentFill: function($modalBox, JSON) {
+    //modal box content
+    var $mbContent = $modalBox.find('.content').eq(0);
+    var contentPartial = '';
+    $.each(JSON, function(i, field){
+      contentPartial += '<span class="name">'+ field.name
+        +'</span>：<span class="value">' + field.value + '</span><br>';
+    });
+    $mbContent.html(contentPartial);
+  },
+  popup: function($modalBox) {
+    /*显示modalBox*/
+    $modalBox.show();
+    document.body.addEventListener('touchmove', function (event) {
+      event.preventDefault();
+    }, false);
+  }
+};
