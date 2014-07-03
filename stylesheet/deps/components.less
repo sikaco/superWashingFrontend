@@ -10,7 +10,6 @@ input {
 /*---------------------------------
  *  components
  *---------------------------------*/
-
 /*buttons*/
 .btn {
   /*完全通用属性*/
@@ -57,8 +56,11 @@ input {
 //订单页面状态按钮
 .btn-orderState-mixin {
   //just a mixin, don't use it straight!
-  width: 48px;
-  height: 22px;
+  padding: 3px 0px 4px;
+  background-color: @blue-light;
+  width: 71px;
+  float: right;
+  text-align: center;
 }
 
 .btn-orderFinished {
@@ -171,7 +173,14 @@ hr {
   margin: 12px 0;
 }
 
+/*---------------------------------
+ *  util classes
+ *---------------------------------*/
 /*purple text*/
 .purpleWords {
   color: @purple;
+}
+
+.clearFloat {
+  clear: both;
 }

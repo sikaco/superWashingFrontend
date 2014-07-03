@@ -1,40 +1,62 @@
 @import "deps/_variables";
 
-#categoryList {
+#orderList {
   display: block;
   list-style: none;
   padding: 5px 10px 0;
-  color: @white;
   font-size: 1.5rem;
   li {
     margin-bottom: 10px;
     border: solid 1px @grayB5;
     position: relative;
   }
+  .orderState {
+    border-bottom: solid 1px @grayA0;
+    padding-left: 15px;
+    padding-right: 5px;
+    &>span {
+      height: 35px;
+      line-height: 35px;
+      display: block;
+      float: left;
+    }
+  }
+  .btn {
+    margin-top: 4px;
+  }
+  .img {
+    border: solid 1px @grayCF;
+    padding: 3px;
+    width: 100px;
+    margin: 10px 20px 10px 10px;
+    display: inline-block;
+  }
   img {
     width: 100%;
-    display: block;
+    display: inline-block;
   }
-  .brief {
+  .payInfo {
+    padding: 10px 0;
+    width: 150px;
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    &>span {
+      font-size: 1.4rem;
+      color: @gray6c;
+      margin-top: 2px;
+      display: block;
+    }
+  }
+  .serviceTime {
+    background: @blue url('../image/spoondrift.png') repeat-x;
+    background-size: 9px;
+    color: @white;
+    padding: 10px 0 6px 10px;
+    position: relative;
+  }
+  .time {
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 1px 7px;
-  }
-  h2 {
-    font-size: 1.5rem;
-    margin: 5px 0;
-  }
-  .price {
-    margin-top: 2px;
-  }
-  em {
-    font-size: 2.5rem;
-    font-style: normal;
-  }
-  .btn-orderImme {
-    position: absolute;
-    right: 8px;
-    top: 30px;
+    right: 10px;
   }
 }
