@@ -28,26 +28,26 @@
 <main>
     <!--constant_header end-->
     <h1>返洗申请表</h1>
-    <form id="rewashingForm">
+    <form id="rewashingForm" action="">
         <div class="formRow">
             <label for="name">您的姓名：</label>
-            <input id="name">
+            <input id="name" name="name">
         </div>
         <div class="formRow">
             <label for="telephone">您的电话号码：</label>
-            <input id="telephone">
+            <input id="telephone" name="telephone">
         </div>
         <div class="formRow">
             <label for="orderId">服务订单号：</label>
-            <input id="orderId">
+            <input id="orderId" name="orderId">
         </div>
         <div class="formRow">
             <label for="clothing">需要返洗的衣物名称：</label>
-            <input id="clothing">
+            <input id="clothing" name="clothing">
         </div>
         <div class="formRow">
             <label for="reason">返洗原因：</label>
-            <textarea id="reason"></textarea>
+            <textarea id="reason" name="reason"></textarea>
         </div>
         <button class="btn btn-submit" type="submit">提交</button>
     </form>
