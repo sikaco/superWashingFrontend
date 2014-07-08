@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <!--homepage view-->
+    <definition name="homepage" extends="website-template">
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.home" />
+        <put-attribute name="screen-id" value="index_page" />
+        <put-attribute name="main-content1" value="/WEB-INF/website/homepage/homepagebody.jsp" />
+        <put-attribute name="main-content2" value="/WEB-INF/website/homepage/leftshopby.jsp" />
+        <put-attribute name="constant-toolbar" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+    </definition>
+
+    <!--Login view-->
+    <definition name="login" extends="website-template">
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.login" />
+        <put-attribute name="screen-id" value="passport" />
+        <put-attribute name="main-content1" value="/WEB-INF/website/login/login.jsp" />
+    </definition>
+    
+    <!--Login Success view-->
+     <definition name="loginSuccess" extends="website-template">
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.loginSuccess" />
+        <put-attribute name="screen-id" value="passport" />
+        <put-attribute name="main-content1" value="/WEB-INF/website/login/success.jsp" />
+    </definition>
+    <!--resert pass-->
+     <definition name="resertPass" extends="website-template">
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.resetPassword" />
+        <put-attribute name="screen-id" value="passport" />
+        <put-attribute name="main-content1" value="/WEB-INF/website/login/resetPassword.jsp" />
+    </definition>
+    
+    <!--semd Mail-->
+     <definition name="sendMail" extends="website-template">
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.sendMail" />
+        <put-attribute name="screen-id" value="resertPass" />
+        <put-attribute name="main-content1" value="/WEB-INF/website/login/sendMail.jsp" />
+    </definition>
+    
+    <definition name="resertSendMailSucc" extends="website-template">
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.restPasswordSendMailSuccee" />
+        <put-attribute name="screen-id" value="resertSendMailSucc" />
+        <put-attribute name="main-content1" value="/WEB-INF/website/login/emaisuccess.jsp" />
+    </definition>
+    
+    <!--send Message start-->
+    <definition name="sendMessagePage" extends="website-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/customerservice/sendMessage.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.sendMessagePage" />
+    </definition>
+    
+    <definition name="sendMessageSuccess" extends="website-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/customerservice/sendMessageSuccess.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.sendMessageSuccess" />
+    </definition>
+    
+    <definition name="sendMessageError" extends="website-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/customerservice/sendMessageError.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.sendMessageFailed" />
+    </definition>
+     <!--send Message end-->
+     
+     <!--点击1级category进入页面 -->
+     <definition name="viewSubCategory" extends="website-template">
+        <put-attribute name="screen-id" value="category" />
+        <put-attribute name="main-content1" value="/WEB-INF/website/category/viewSubCategory.jsp" />
+        <put-attribute name="main-content2" value="/WEB-INF/website/homepage/leftshopby.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.subCategory" />
+     </definition>
+     <!--点击1级category进入页面 END-->
+     
+    <!-- productSearch start -->
+    <definition name="elasticSearchProducts" extends="website-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/product/product_search_list.jsp" />
+        <put-attribute name="screen-id" value="p_list" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.productSearchList" />
+    </definition>
+    
+<!-- PLP -->
+
+  <definition name="product_list" extends="website-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/product/product_list.jsp" />
+        <put-attribute name="screen-id" value="p_list" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.productList" />
+    </definition>
+  <definition name="product_boutique_list" extends="website-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/product/product_boutique_list.jsp" />
+        <put-attribute name="screen-id" value="p_list" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.productList" />
+    </definition>
+    <definition name="new_arrivals" extends="website-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/product/new_arrivals.jsp" />
+        <put-attribute name="screen-id" value="new_arrivals" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.newArrivals" />
+    </definition>
+    <definition name="new_products" extends="website-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/product/new_products.jsp" />
+        <put-attribute name="screen-id" value="new_products" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.newArrivals" />
+    </definition>
+  <!-- pdp start -->
+  <definition name="productDisplyPage" extends="website-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/product/pdp.jsp" />
+        <put-attribute name="screen-id" value="details" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.productDetail" />
+    </definition>
+    
+   <!-- passport -->
+   
+   <definition name="login_page" template="/WEB-INF/common/template/passport/passport_template.jsp">
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.login" />
+        <put-attribute name="screen-id" value="None" />
+        <put-attribute name="main-content1" value="/WEB-INF/website/customer/passport.jsp" />
+        <put-attribute name="constant-footer" value="/WEB-INF/common/template/passport/passport_footer.jsp" />
+    </definition>
+    
+    <definition name="register_page" template="/WEB-INF/common/template/passport/passport_template.jsp">
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.register" />
+        <put-attribute name="screen-id" value="None" />
+        <put-attribute name="main-content1" value="/WEB-INF/website/customer/passport.jsp" />
+        <put-attribute name="constant-footer" value="/WEB-INF/common/template/passport/passport_footer.jsp" />
+    </definition>
+   
+<!-- My Account start -->
+    
+    <!--welcomePage -->
+    <definition name="welcomePage" extends="account-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/account/welcome/welcome.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.welcomeMesg" />
+    </definition>
+
+    <!-- account -->
+    <definition name="myAccountPage" extends="account-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/account/profile/edit.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.accountInfo" />
+    </definition>
+    
+    <!--creditsPage -->
+    <definition name="creditsPage" extends="account-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/account/credits/list.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.myCredits" />
+    </definition>
+    
+    <!-- addresses -->
+    <definition name="myAddressPage" extends="account-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/account/addresses/list.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.myAddress" />
+    </definition>
+   
+    <!-- invitation -->
+    <definition name="invitation_page" extends="account-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/account/invitation/invite.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.inviteFriends" />
+    </definition>
+    
+    <!-- my order -->
+    <definition name="order_detail_list" extends="account-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/account/orders/list.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.myOrder" />
+    </definition>
+    
+    <!-- cancel order -->
+    <definition name="order_cancel_page" extends="account-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/account/orders/cancel.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.cancelOrder" />
+    </definition>
+    
+     <definition name="order_detail" extends="account-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/account/orders/order_detail.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.orderDetail" />
+    </definition>
+<!-- My Account end -->
+    
+    <!-- shopping cart view -->
+    <definition name="shopping_cart_view" extends="checkout-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/cart/shopping_cart_info.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.shoppingCartInfo" />
+        <put-attribute name="step" value="step1" cascade="true"/>
+    </definition>
+    
+    <!--checkout -->
+    <definition name="checkoutpage" extends="checkout-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/checkout/checkoutpage.jsp" />
+        <put-attribute name="screen-id" value="checkout_page" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.checkOut" />
+        <put-attribute name="step" value="step2" cascade="true"/>
+    </definition>
+    
+    <definition name="pay_confirm" extends="checkout-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/checkout/pay_confirm.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.payment" />
+        <put-attribute name="step" value="step3" cascade="true"/>
+    </definition>
+    
+    <definition name="order_succeed" extends="checkout-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/checkout/order_succeed.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.orderSucceed" />
+        <put-attribute name="step" value="step3" cascade="true"/>
+    </definition>
+    
+    <definition name="pay_failed" extends="checkout-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/checkout/pay_failed.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.payFailed" />
+        <put-attribute name="step" value="step3" cascade="true"/>
+    </definition>
+    <!--checkout end-->
+    
+    <!-- about -->
+    <definition name="faqs" extends="about-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/about/faqs.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.faqs" />
+    </definition>
+    
+    <definition name="companyintroduction" extends="about-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/about/companyintroduction.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.companyintroduction" />
+    </definition>
+
+    <definition name="memberintroduction" extends="about-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/about/memberintroduction.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.memberintroduction" />
+    </definition>
+
+    <definition name="payonline" extends="about-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/about/payonline.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.payOnLine" />
+    </definition>
+
+    <definition name="paycod" extends="about-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/about/paycod.jsp" />
+        <put-attribute name="title" value="paycod" />
+    </definition>
+
+    <definition name="processofpurchase" extends="about-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/about/processofpurchase.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.processofpurchase" />
+    </definition>
+
+    <definition name="returnpolicy" extends="about-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/about/returnpolicy.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.ReturnPolicy" />
+    </definition>
+
+    <definition name="useragreement" extends="about-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/about/useragreement.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.agreement" />
+    </definition>
+
+    <definition name="contactus" extends="about-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/about/contactus.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.contactus" />
+    </definition>
+
+    <definition name="hiring" extends="about-template">
+        <put-attribute name="main-content1" value="/WEB-INF/website/about/hiring.jsp" />
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.hiring" />
+    </definition>
+</tiles-definitions>

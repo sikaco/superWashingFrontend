@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+
+    <definition name="default-403" template="/WEB-INF/common/error/default-403.jsp"></definition>
+
+    <definition name="default-404" template="/WEB-INF/common/error/default-404.jsp">
+      <put-attribute name="constant-footer" value="/WEB-INF/common/template/website/constant_footer.jsp" />
+    </definition>
+
+    <definition name="default-error" template="/WEB-INF/common/error/default-404.jsp">
+        <put-attribute name="constant-footer" value="/WEB-INF/common/template/website/constant_footer.jsp" />
+    </definition>
+    
+    <definition name="duplicate-submit" template="/WEB-INF/common/error/duplicate-submit.jsp">
+      <put-attribute name="constant-footer" value="/WEB-INF/common/template/website/constant_footer.jsp" />
+    </definition>
+    
+    <definition name="website-template" template="/WEB-INF/template/commmon/transaction_template.jsp">
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.blank" />
+        <put-attribute name="screen-id" value="shop_car" />
+        <put-attribute name="constant-toolbar" value="/WEB-INF/common/template/website/constant_toolbar.jsp" />
+        <put-attribute name="constant-header" value="/WEB-INF/common/template/website/constant_header.jsp" />
+        <put-attribute name="main-content1" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="main-content2" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="main-content3" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="main-content4" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="main-content5" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="main-content6" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="main-content7" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="constant-footer" value="/WEB-INF/common/template/website/constant_footer.jsp" />
+    </definition>
+    
+    <definition name="account-template" template="/WEB-INF/common/template/account/transaction_template.jsp">
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.personalCenter" />
+        <put-attribute name="screen-id" value="account" />
+        <put-attribute name="main-menu" value="/WEB-INF/common/template/account/constant_menu.jsp" />
+        <put-attribute name="constant-toolbar" value="/WEB-INF/common/template/website/constant_toolbar.jsp" />
+        <put-attribute name="constant-header" value="/WEB-INF/common/template/website/constant_header.jsp" />
+        <put-attribute name="main-content1" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="main-content2" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="main-content3" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="main-content4" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="main-content5" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="main-content6" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="main-content7" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="constant-footer" value="/WEB-INF/common/template/website/constant_footer.jsp" />
+        <put-attribute name="pageUrlName" value="Account Information" />
+    </definition>
+
+    <definition name="checkout-template" template="/WEB-INF/common/template/checkout/checkout_template.jsp">
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.checkOut" />
+        <put-attribute name="screen-id" value="shop_car" />
+        <put-attribute name="constant-header" >
+            <definition template="/WEB-INF/common/template/checkout/checkout_header.jsp">
+                <put-attribute name="step" cascade="true"/>
+            </definition>
+        </put-attribute>
+        <put-attribute name="constant-toolbar" value="/WEB-INF/common/template/checkout/checkout_toolbar.jsp" />
+        <put-attribute name="main-content1" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="main-content2" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="main-content3" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="main-content4" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="main-content5" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="main-content6" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="main-content7" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="constant-footer" value="/WEB-INF/common/template/checkout/checkout_footer.jsp" />
+    </definition>
+    
+    <definition name="about-template" template="/WEB-INF/common/template/about/transaction_template.jsp">
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.blank" />
+        <put-attribute name="screen-id" value="pAbout" />
+        <put-attribute name="constant-toolbar" value="/WEB-INF/common/template/website/constant_toolbar.jsp" />
+        <put-attribute name="constant-header" value="/WEB-INF/common/template/website/constant_header.jsp" />
+        <put-attribute name="constant-menu" value="/WEB-INF/common/template/about/about_menu.jsp" />
+        <put-attribute name="main-content1" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="main-content2" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="main-content3" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="main-content4" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="main-content5" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="main-content6" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="main-content7" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="constant-footer" value="/WEB-INF/common/template/website/constant_footer.jsp" />
+    </definition>
+    
+    <definition name="passport-template" template="/WEB-INF/common/template/passport/passport_template.jsp">
+        <put-attribute name="title" value="nstechs.i18n.jsp.tiles.blank" />
+        <put-attribute name="screen-id" value="None" />
+        <put-attribute name="main-content1" value="/WEB-INF/common/template/website/constant_empty.jsp" />
+        <put-attribute name="constant-footer" value="/WEB-INF/common/template/passport/passport_footer.jsp" />
+    </definition>
+
+</tiles-definitions>

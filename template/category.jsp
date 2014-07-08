@@ -1,3 +1,4 @@
+<tiles:insertAttribute name="common-header"/>
 <!--different-->
 <link rel="stylesheet" href="../stylesheet/category.css">
 <!--different end-->
@@ -74,4 +75,4 @@
         <a href="" class="btn btn-orderImme">马上下单</a>
     </li>
 </ul>
-
+<tiles:insertAttribute name="common-footer"/>
