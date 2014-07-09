@@ -1,0 +1,217 @@
+<!--constant_header-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+        maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta content=”yes” name=”apple-mobile-web-app-capable”/>
+    <title></title>
+    <!--depend css-->
+    <link rel="stylesheet" href="../../stylesheet/deps/normalize.css">
+    <link rel="stylesheet" href="../../stylesheet/deps/components.css">
+    <link rel="stylesheet" href="../../stylesheet/common.css">
+    <!--depend css end-->
+    <!--different-->
+    <link rel="stylesheet" href="../../stylesheet/details.css">
+    <!--different end-->
+</head>
+<body>
+<header>
+    <div id="telBar">
+        <span>有问题请拨打电话 400-4000-400000</span>
+        <a href="">
+            <img src="../../image/telphone.png">
+        </a>
+    </div>
+</header>
+<main>
+    <!--constant_header end-->
+
+    <div id="basicPrice">
+        <img src="../../image/details/bagWashing.png">
+
+        <h1>
+            超级洗衣 单件洗<em>按件计价</em>
+        </h1>
+    </div>
+    <div id="washingNumber">
+        <div class="formRow">
+            <div class="unitPrice">
+                <div class="borderNum purpleWords">10</div>
+                <span class="purpleWords yuan">元</span>
+            </div>
+            <span>衬衣/T恤/短袖</span>
+
+            <div class="numberBox">
+                <button class="reduce btn">-</button>
+                <label>
+                    <input class="num" value="1"/>
+                </label>
+                <button class="add btn">+</button>
+            </div>
+        </div>
+        <div class="formRow">
+            <div class="unitPrice">
+                <div class="borderNum purpleWords">10</div>
+                <span class="purpleWords yuan">元</span>
+            </div>
+            <span>衬衣/T恤/短袖</span>
+
+            <div class="numberBox">
+                <button class="reduce btn">-</button>
+                <label>
+                    <input class="num" value="1"/>
+                </label>
+                <button class="add btn">+</button>
+            </div>
+        </div>
+        <div class="formRow">
+            <div class="unitPrice">
+                <div class="borderNum purpleWords">10</div>
+                <span class="purpleWords yuan">元</span>
+            </div>
+            <span>衬衣/T恤/短袖</span>
+
+            <div class="numberBox">
+                <button class="reduce btn">-</button>
+                <label>
+                    <input class="num" value="1"/>
+                </label>
+                <button class="add btn">+</button>
+            </div>
+        </div>
+        <div class="formRow">
+            <div class="unitPrice">
+                <div class="borderNum purpleWords">10</div>
+                <span class="purpleWords yuan">元</span>
+            </div>
+            <span>衬衣/T恤/短袖</span>
+
+            <div class="numberBox">
+                <button class="reduce btn">-</button>
+                <label>
+                    <input class="num" value="1"/>
+                </label>
+                <button class="add btn">+</button>
+            </div>
+        </div>
+        <div class="formRow lastRow">
+            <div class="unitPrice">
+                <div class="borderNum purpleWords">10</div>
+                <span class="purpleWords yuan">元</span>
+            </div>
+            <span>衬衣/T恤/短袖</span>
+
+            <div class="numberBox">
+                <button class="reduce btn">-</button>
+                <label>
+                    <input class="num" value="1"/>
+                </label>
+                <button class="add btn">+</button>
+            </div>
+        </div>
+    </div>
+    <h2>单件洗简介</h2>
+
+    <div id="intro">
+        <p class="introText">
+            &nbsp;&nbsp;&nbsp;&nbsp;超级洗衣采用O2O业务模式，将线下中央洗涤工厂与移动互联网结合在一起，让微洗衣网上平台成为线下交易的前台。您通过微洗衣平台线上选择洗衣服务，在线交易，免费上门取送衣物。
+        </p>
+
+        <hr>
+        <p class="introText">
+            服务项目：微洗衣主要业务包括三大类上百个<br>
+            服务理念：快乐可以很简单，干净可以很简单<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;简单你的生活！<br>
+            联系电话： 400-878-1797<br>
+            电子邮箱： service@weixiyi.cn
+        </p>
+
+        <p class="purpleWords">
+            <span class="star-icon"></span><span class="star-icon"></span><span class="star-icon"></span>
+            如果您在下单中遇到任何问题请微信联系我们！
+        </p>
+    </div>
+    <h2>填写订单</h2>
+
+    <div id="orderFormDiv">
+        <form id="orderForm" action="">
+            <div class="formRow">
+                <label for="name">姓名：
+                </label><input id="name" name="姓名">
+            </div>
+            <div class="formRow">
+                <label for="telephone">手机号码：
+                </label><input id="telephone" name="手机号码">
+            </div>
+            <div class="formRow">
+                <label for="city">选择城市：
+                </label><input id="city" name="选择城市">
+            </div>
+            <div class="formRow">
+                <label for="area">选择区域：
+                </label><select id="area" name="选择区域">
+                <option value="成都">成都</option>
+            </select>
+            </div>
+            <div class="formRow">
+                <label for="address">取件地址：
+                </label><textarea id="address" rows="3" name="取件地址"></textarea>
+            </div>
+            <div class="formRow">
+                <label for="payMethod">支付方式：
+                </label><select id="payMethod" name="支付方式">
+                <option value="微信支付">微信支付</option>
+                <option value="当面支付">当面支付</option>
+            </select>
+            </div>
+        </form>
+    </div>
+    <div id="timeWrapper">
+        <div id="time">
+            <div class="formRow">
+                <span class="point-icon"></span>
+                <label for="takeTime">取件时间：</label>
+                <input id="takeTime" size="16" disabled>
+            </div>
+            <div class="formRow">
+                <span class="point-icon"></span>
+                <label for="conveyTime">送件时间：</label>
+                <input id="conveyTime" size="16" disabled>
+            </div>
+        </div>
+    </div>
+    <div id="orderInfo">
+        <div id="orderPrice">
+            订单金额：<em class="num">90元</em>
+        </div>
+        <!--data-formId对应需要提交的表单的id-->
+        <div id="orderSubmit" data-formid="orderForm">
+            下&nbsp;&nbsp;&nbsp;单
+        </div>
+    </div>
+    <div class="modalBox" id="confirmOrder">
+        <div class="box">
+            <h1>确认订单</h1>
+
+            <div class="content"></div>
+            <div class="btnGroup">
+                <input type="button" class="btn btn-cancel" value="取 消">
+                <input type="button" class="btn btn-confirm" value="下 单">
+            </div>
+        </div>
+    </div>
+    <!--constant_footer-->
+</main>
+<footer>
+
+</footer>
+<!--different-->
+<script src="../../javascript/jquery.min.js"></script>
+<script src="../../javascript/components.js"></script>
+<script src="../../javascript/details.js"></script>
+<!--different end-->
+</body>
+</html>
+<!--constant_footer end-->
