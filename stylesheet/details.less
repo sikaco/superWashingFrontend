@@ -33,7 +33,7 @@ h2 {
 }
 
 #washingNumber {
-  padding: 0 15px;
+  padding: 0 5px;
   .bagNum {
     padding: 10px 15px;
   }
@@ -41,14 +41,16 @@ h2 {
     border-bottom: solid 1px @grayCE;
     padding-bottom: 6px;
     padding-top: 6px;
+    display: table;
   }
   .lastRow {
     border-bottom: none;
   }
   .unitPrice {
-    height: 100%;
-    width: 25%;
-    display: inline-block;
+    min-width: 76px;
+    display: table-cell;
+    width: 1%;
+    vertical-align: middle;
   }
   .borderNum {
     width: 44px;
@@ -59,15 +61,22 @@ h2 {
     display: inline-block;
   }
   .yuan {
-    font-size: 2rem;
+    font-size: 20px;
     position: relative;
     bottom: 1px;
   }
-  span {
+  .type {
     position: relative;
     bottom: 2px;
-    display: inline-block;
-    width: 40%;
+    display: table-cell;
+    text-align: center;
+    word-break: break-all;
+  }
+  .numBoxWrapper {
+    min-width: 9rem;
+    width: 1%;
+    display: table-cell;
+    vertical-align: middle;
   }
 }
 

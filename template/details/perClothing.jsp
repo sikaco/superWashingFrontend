@@ -43,14 +43,16 @@ pageEncoding="UTF-8"%>
                 <div class="borderNum purpleWords">10</div>
                 <span class="purpleWords yuan">元</span>
             </div>
-            <span>衬衣/T恤/短袖</span>
+            <span class="type">衬衣/T恤/短袖</span>
 
-            <div class="numberBox">
-                <button class="reduce btn">-</button>
-                <label>
-                    <input class="num" value="1"/>
-                </label>
-                <button class="add btn">+</button>
+            <div class="numBoxWrapper">
+                <div class="numberBox">
+                    <button class="reduce btn">-</button>
+                    <label>
+                        <input class="num" value="1"/>
+                    </label>
+                    <button class="add btn">+</button>
+                </div>
             </div>
         </div>
         <div class="formRow">
@@ -58,44 +60,16 @@ pageEncoding="UTF-8"%>
                 <div class="borderNum purpleWords">10</div>
                 <span class="purpleWords yuan">元</span>
             </div>
-            <span>衬衣/T恤/短袖</span>
+            <span class="type">衬衣/T恤/短袖</span>
 
-            <div class="numberBox">
-                <button class="reduce btn">-</button>
-                <label>
-                    <input class="num" value="1"/>
-                </label>
-                <button class="add btn">+</button>
-            </div>
-        </div>
-        <div class="formRow">
-            <div class="unitPrice">
-                <div class="borderNum purpleWords">10</div>
-                <span class="purpleWords yuan">元</span>
-            </div>
-            <span>衬衣/T恤/短袖</span>
-
-            <div class="numberBox">
-                <button class="reduce btn">-</button>
-                <label>
-                    <input class="num" value="1"/>
-                </label>
-                <button class="add btn">+</button>
-            </div>
-        </div>
-        <div class="formRow">
-            <div class="unitPrice">
-                <div class="borderNum purpleWords">10</div>
-                <span class="purpleWords yuan">元</span>
-            </div>
-            <span>衬衣/T恤/短袖</span>
-
-            <div class="numberBox">
-                <button class="reduce btn">-</button>
-                <label>
-                    <input class="num" value="1"/>
-                </label>
-                <button class="add btn">+</button>
+            <div class="numBoxWrapper">
+                <div class="numberBox">
+                    <button class="reduce btn">-</button>
+                    <label>
+                        <input class="num" value="1"/>
+                    </label>
+                    <button class="add btn">+</button>
+                </div>
             </div>
         </div>
         <div class="formRow lastRow">
@@ -103,14 +77,16 @@ pageEncoding="UTF-8"%>
                 <div class="borderNum purpleWords">10</div>
                 <span class="purpleWords yuan">元</span>
             </div>
-            <span>衬衣/T恤/短袖</span>
+            <span class="type">衬衣/T恤/短袖</span>
 
-            <div class="numberBox">
-                <button class="reduce btn">-</button>
-                <label>
-                    <input class="num" value="1"/>
-                </label>
-                <button class="add btn">+</button>
+            <div class="numBoxWrapper">
+                <div class="numberBox">
+                    <button class="reduce btn">-</button>
+                    <label>
+                        <input class="num" value="1"/>
+                    </label>
+                    <button class="add btn">+</button>
+                </div>
             </div>
         </div>
     </div>

@@ -34,7 +34,7 @@ pageEncoding="UTF-8"%>
         <img src="../../image/details/bagWashing.png">
 
         <h1>
-            超级洗衣 MINI袋<em>40元</em>/袋
+            超级洗衣 SUPER袋<em>80元</em>/袋
         </h1>
     </div>
     <div id="washingNumber">
