@@ -1,5 +1,5 @@
 <!--constant_header-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE>
 <html xmlns="http://www.w3.org/1999/html">
 <head lang="zh-cn">
     <meta charset="UTF-8">
@@ -20,7 +20,7 @@
 <header>
     <div id="telBar">
         <span>有问题请拨打电话 400-4000-400000</span>
-        <a href="">
+        <a href="tel:123456">
             <img src="../../image/telphone.png">
         </a>
     </div>
@@ -43,12 +43,12 @@
             </div>
             <span>衬衣/T恤/短袖</span>
 
-            <div class="numberBox">
-                <button class="reduce btn">-</button>
+            <div class="numberBox" data-price="40">
+                <button class="reduce btn" data-role="-">-</button>
                 <label>
-                    <input class="num" value="1"/>
+                    <input class="num" value="0"/>
                 </label>
-                <button class="add btn">+</button>
+                <button class="add btn" data-role="+">+</button>
             </div>
         </div>
         <div class="formRow">
@@ -58,12 +58,12 @@
             </div>
             <span>衬衣/T恤/短袖</span>
 
-            <div class="numberBox">
-                <button class="reduce btn">-</button>
+            <div class="numberBox" data-price="40">
+                <button class="reduce btn" data-role="-">-</button>
                 <label>
-                    <input class="num" value="1"/>
+                    <input class="num" value="0"/>
                 </label>
-                <button class="add btn">+</button>
+                <button class="add btn" data-role="+">+</button>
             </div>
         </div>
         <div class="formRow">
@@ -73,12 +73,12 @@
             </div>
             <span>衬衣/T恤/短袖</span>
 
-            <div class="numberBox">
-                <button class="reduce btn">-</button>
+            <div class="numberBox" data-price="40">
+                <button class="reduce btn" data-role="-">-</button>
                 <label>
-                    <input class="num" value="1"/>
+                    <input class="num" value="0"/>
                 </label>
-                <button class="add btn">+</button>
+                <button class="add btn" data-role="+">+</button>
             </div>
         </div>
         <div class="formRow">
@@ -88,12 +88,12 @@
             </div>
             <span>衬衣/T恤/短袖</span>
 
-            <div class="numberBox">
-                <button class="reduce btn">-</button>
+            <div class="numberBox" data-price="40">
+                <button class="reduce btn" data-role="-">-</button>
                 <label>
-                    <input class="num" value="1"/>
+                    <input class="num" value="0"/>
                 </label>
-                <button class="add btn">+</button>
+                <button class="add btn" data-role="+">+</button>
             </div>
         </div>
         <div class="formRow lastRow">
@@ -103,12 +103,12 @@
             </div>
             <span>衬衣/T恤/短袖</span>
 
-            <div class="numberBox">
-                <button class="reduce btn">-</button>
+            <div class="numberBox" data-price="40">
+                <button class="reduce btn" data-role="-">-</button>
                 <label>
-                    <input class="num" value="1"/>
+                    <input class="num" value="0"/>
                 </label>
-                <button class="add btn">+</button>
+                <button class="add btn" data-role="+">+</button>
             </div>
         </div>
     </div>
@@ -135,6 +135,11 @@
     </div>
     <h2>填写订单</h2>
 
+    <div id="orderFormFilled">
+        <div class="formRow"><strong class="name">姓名</strong>：<span>XX</span></div>
+        <div class="formRow"><strong class="phone">手机号码</strong>：<span>13012341234</span><br></div>
+        <div class="formRow"><strong class="addr">取件地址</strong>：<span>成都市温哥华广场</span></div>
+    </div>
     <div id="orderFormDiv">
         <form id="orderForm" action="">
             <div class="formRow">
@@ -184,7 +189,7 @@
     </div>
     <div id="orderInfo">
         <div id="orderPrice">
-            订单金额：<em class="num">90元</em>
+            订单金额：<em class="num">0</em>元
         </div>
         <!--data-formId对应需要提交的表单的id-->
         <div id="orderSubmit" data-formid="orderForm">

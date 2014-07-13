@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 pageEncoding="UTF-8"%>
 <!--constant_header-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE>
 <html xmlns="http://www.w3.org/1999/html">
 <head lang="zh-cn">
     <meta charset="UTF-8">
@@ -23,9 +23,9 @@ pageEncoding="UTF-8"%>
 <header>
     <div id="telBar">
         <span>有问题请拨打电话 400-4000-400000</span>
-        <a href="">
-            <img src="../image/telphone.png">
-        </a>
+        <a href="tel:123456">
+			<img src="../image/telphone.png">
+		</a>
     </div>
 </header>
 <main>
