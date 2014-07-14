@@ -41,7 +41,7 @@
         <div class="bagNum">
         <span class="purpleWords">清洗数量：</span>
 
-        <div class="numberBox" data-price="40">
+        <div class="numberBox" data-price="80">
         <button class="reduce btn" data-role="-">-</button>
         <label>
         <input class="num" value="0"/>
