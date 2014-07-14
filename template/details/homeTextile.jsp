@@ -45,7 +45,7 @@
         </div>
         <span>衬衣/T恤/短袖</span>
 
-        <div class="numberBox" data-price="40">
+        <div class="numberBox" data-price="10">
         <button class="reduce btn" data-role="-">-</button>
         <label>
         <input class="num" value="0"/>
