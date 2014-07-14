@@ -43,7 +43,7 @@ pageEncoding="UTF-8"%>
                     限时价：<em>40元</em>/袋
                 </p>
             </div>
-            <a href="./details/miniBag.jsp" class="btn btn-orderImme">马上下单</a>
+            <a href="miniBag.jsp" class="btn btn-orderImme">马上下单</a>
         </li>
         <li>
             <img src="../image/category/superBag.png">
@@ -57,7 +57,7 @@ pageEncoding="UTF-8"%>
                     限时价：<em>80元</em>/袋
                 </p>
             </div>
-            <a href="./details/superBag.jsp" class="btn btn-orderImme">马上下单</a>
+            <a href="superBag.jsp" class="btn btn-orderImme">马上下单</a>
         </li>
         <li>
             <img src="../image/category/perClothing.png">
@@ -71,7 +71,7 @@ pageEncoding="UTF-8"%>
                     限时价：<em>按件计价</em>
                 </p>
             </div>
-            <a href="./details/perClothing.jsp" class="btn btn-orderImme">马上下单</a>
+            <a href="perClothing.jsp" class="btn btn-orderImme">马上下单</a>
         </li>
         <li>
             <img src="../image/category/shoes.png">
@@ -85,7 +85,7 @@ pageEncoding="UTF-8"%>
                     限时价：<em>按件计价</em>
                 </p>
             </div>
-            <a href="./details/shoes.jsp" class="btn btn-orderImme">马上下单</a>
+            <a href="shoes.jsp" class="btn btn-orderImme">马上下单</a>
         </li>
         <li>
             <img src="../image/category/homeTextile.png">
@@ -99,7 +99,7 @@ pageEncoding="UTF-8"%>
                     限时价：<em>按件计价</em>
                 </p>
             </div>
-            <a href="./details/homeTextile.jsp" class="btn btn-orderImme">马上下单</a>
+            <a href="homeTextile.jsp" class="btn btn-orderImme">马上下单</a>
         </li>
     </ul>
     <!--constant_footer-->

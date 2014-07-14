@@ -10,12 +10,12 @@
         <meta content=”yes” name=”apple-mobile-web-app-capable”/>
         <title></title>
         <!--depend css-->
-        <link rel="stylesheet" href="../../stylesheet/deps/normalize.css">
-        <link rel="stylesheet" href="../../stylesheet/deps/components.css">
-        <link rel="stylesheet" href="../../stylesheet/common.css">
+        <link rel="stylesheet" href="../stylesheet/deps/normalize.css">
+        <link rel="stylesheet" href="../stylesheet/deps/components.css">
+        <link rel="stylesheet" href="../stylesheet/common.css">
         <!--depend css end-->
         <!--different-->
-        <link rel="stylesheet" href="../../stylesheet/details.css">
+        <link rel="stylesheet" href="../stylesheet/details.css">
         <!--different end-->
         </head>
         <body>
@@ -23,7 +23,7 @@
         <div id="telBar">
         <span>有问题请拨打电话 400-4000-400000</span>
         <a href="tel:123456">
-        <img src="../../image/telphone.png">
+        <img src="../image/telphone.png">
         </a>
         </div>
         </header>
@@ -31,22 +31,17 @@
         <!--constant_header end-->
 
         <div id="basicPrice">
-        <img src="../../image/details/shoes.png">
+        <img src="../image/details/superBag.png">
 
         <h1>
-        超级洗衣 单件洗<em>按件计价</em>
+        超级洗衣 SUPER袋<em>80元</em>/袋
         </h1>
         </div>
         <div id="washingNumber">
-        <div class="formRow">
-        <div class="unitPrice">
-        <div class="borderNum purpleWords">10</div>
-        <span class="purpleWords yuan">元</span>
-        </div>
-        <span class="type">衬衣/T恤/短袖</span>
+        <div class="bagNum">
+        <span class="purpleWords">清洗数量：</span>
 
-        <div class="numBoxWrapper">
-        <div class="numberBox" data-price="40">
+        <div class="numberBox" data-price="80">
         <button class="reduce btn" data-role="-">-</button>
         <label>
         <input class="num" value="0"/>
@@ -55,42 +50,7 @@
         </div>
         </div>
         </div>
-        <div class="formRow">
-        <div class="unitPrice">
-        <div class="borderNum purpleWords">10</div>
-        <span class="purpleWords yuan">元</span>
-        </div>
-        <span class="type">衬衣/T恤/短袖</span>
-
-        <div class="numBoxWrapper">
-        <div class="numberBox" data-price="40">
-        <button class="reduce btn" data-role="-">-</button>
-        <label>
-        <input class="num" value="0"/>
-        </label>
-        <button class="add btn" data-role="+">+</button>
-        </div>
-        </div>
-        </div>
-        <div class="formRow lastRow">
-        <div class="unitPrice">
-        <div class="borderNum purpleWords">10</div>
-        <span class="purpleWords yuan">元</span>
-        </div>
-        <span class="type">衬衣/T恤/短袖</span>
-
-        <div class="numBoxWrapper">
-        <div class="numberBox" data-price="40">
-        <button class="reduce btn" data-role="-">-</button>
-        <label>
-        <input class="num" value="0"/>
-        </label>
-        <button class="add btn" data-role="+">+</button>
-        </div>
-        </div>
-        </div>
-        </div>
-        <h2>单件洗简介</h2>
+        <h2>一袋洗简介</h2>
 
         <div id="intro">
         <p class="introText">
@@ -188,9 +148,9 @@
 
         </footer>
         <!--different-->
-        <script src="../../javascript/jquery.min.js"></script>
-        <script src="../../javascript/components.js"></script>
-        <script src="../../javascript/details.js"></script>
+        <script src="../javascript/jquery.min.js"></script>
+        <script src="../javascript/components.js"></script>
+        <script src="../javascript/details.js"></script>
         <!--different end-->
         </body>
         </html>
